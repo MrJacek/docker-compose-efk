@@ -3,5 +3,11 @@
 	<body>
 		<p>Tutaj będzie twoja aplikacja</p>
 		<p>A jak zrobisz posta na <strong>/log</strong> a w body będziesz mieć json-na to do elasticsearch zapisze się ładnie z formatowane pola.</p>
+		<p>Przykład za pomocą curla<p>
+		<code>
+			curl -X POST -u "webclient:alamakota" -d '{"message":"hello","inne_pole":"ale raczej niech się zaczęsto nie zmieniaj te pola"}' localhost:8080/log
+		</code>
+		<p>No i link do <a href="http://localhost:5601"a>kibany</a></p>
+		<p>Nie zapomnij dodać index-pattern, żeby móc przeglądać logi</p>
 	</body>
 </html>
